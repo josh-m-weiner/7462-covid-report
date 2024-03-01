@@ -1,7 +1,7 @@
-Minnesota COVID Report
-================
+# Minnesota COVID Report
 
-Report last run: 2023-04-06 22:07:43
+
+Report last run: 2024-03-01 21:13:26
 
 ## Introduction
 
@@ -57,7 +57,7 @@ rate_data %>%
          county %in% top10_pop$county,
          date > Sys.Date() - 30) %>%
   ggplot(aes(x = date, y = rate_last, color = county)) +
-  geom_line(linewidth = 2) +
+  geom_line(linewidth = 2.5) +
   xlab(NULL) +
   ylab("7-day COVID-19 case total per 100,000 population") +
   scale_color_discrete(name = "") +
